@@ -1,0 +1,63 @@
+
+$light-cyan: #cee3e9
+$neon-green: #52ffa8
+$grayish-blue: #4e5d73
+$dark-grayish-blue: #323a49
+$dark-blue: #1f2632
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Manrope', sans-serif
+
+body
+    background-color: $dark-blue
+    .container
+        background-color: $dark-grayish-blue
+        min-width: 40vw
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: space-between
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        padding: 2rem
+        width: 30%
+        height: auto
+        box-shadow: 5px 5px 30px #242a35
+        border-radius: 25px
+        .content-container
+            display: flex
+            flex-direction: column
+            h4
+                color: $neon-green
+                text-align: center
+                margin: 1rem 0
+                letter-spacing: 3px
+                font-weight: 100
+            h2
+                color: $light-cyan
+                text-align: center
+                margin: 2rem 0
+            .divider
+                background: url("../images/pattern-divider-desktop.svg") center no-repeat
+                width: auto
+                height: 20px
+        button
+            position: relative
+            border-radius: 50%
+            height: 3rem
+            width: 3rem
+            border-style: none
+            background: url('../images/icon-dice.svg') center no-repeat
+            background-color: $neon-green
+            cursor: pointer
+            align-self: center
+            bottom: -3.5rem
+            transition: .6s
+            &:hover
+                box-shadow: 1px 1px 10px #40c984
+                transition: .6s
